@@ -83,6 +83,18 @@ public class CacheConfiguration {
             createCache(cm, io.github.vazh.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, io.github.vazh.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, io.github.vazh.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Region.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Country.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Location.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Department.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Task.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Employee.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Job.class.getName(), jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            createCache(cm, io.github.vazh.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
